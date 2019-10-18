@@ -1,5 +1,6 @@
 
-baseURL = "https://example.com/"
+baseURL = "https://concentricsky.github.io/badge-connect-guide/"
+publishDir = "docs"
 
 [module]
 [module.hugoVersion]
