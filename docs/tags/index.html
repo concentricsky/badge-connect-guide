@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Tags</title>
+    
+
+
+
+
+
+
+
+
+<link href='/badge-connect-guide/styles/screen.min.effe22ccbf96cbbaaf00a2e507f631d3322b75caa57a23f93c11e3e6085a1b93.css' rel="stylesheet" media="screen" integrity="sha256-7/4izL&#43;Wy7qvAKLlB/Yx0zIrdcqleiP5PBHj5ghaG5M=" />
+<link href='/badge-connect-guide/styles/print.min.37fed562cbce32487e14eddeaa39b2e79a3881ecb2baef830072d78b6fe0c70d.css' rel="stylesheet" media="print" integrity="sha256-N/7VYsvOMkh&#43;FO3eqjmy55o4geyyuu&#43;DAHLXi2/gxw0=" />
+
+
+    
+
+
+
+
+
+
+<script src='/badge-connect-guide/js/all_nosearch.js'></script>
+
+    
+</head>
+<body class="index" data-languages="">
+    <a href="#" id="nav-button">
+        <span>
+        NAV
+        <img src='/badge-connect-guide/images/navbar.png'/>
+      </span>
+    </a>
+    <div class="toc-wrapper">
+        
+         <img src='/badge-connect-guide/images/logo.png' class="logo" />
+         
+        
+        
+    <ul id="toc" class="toc-list-h1">
+        
+        
+            <li>
+                <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+                
+            </li>
+        
+            <li>
+                <a href="#application-types" class="toc-h1 toc-link" data-title="Application Types">Application Types</a>
+                
+                    <ul class="toc-list-h2">
+                        
+                            <li><a href="#what-is-a-host-backpack" class="toc-h2 toc-link" data-title="What is a Host (Backpack)?">What is a Host (Backpack)?</a></li>
+                        
+                            <li><a href="#examples-of-issuer-role-applications" class="toc-h2 toc-link" data-title="Examples of Issuer-role Applications">Examples of Issuer-role Applications</a></li>
+                        
+                            <li><a href="#examples-of-displayer-role-applications" class="toc-h2 toc-link" data-title="Examples of Displayer-role Applications">Examples of Displayer-role Applications</a></li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li>
+                <a href="#issuer-applications-what-you-need-to-know" class="toc-h1 toc-link" data-title="Issuer Applications: What you Need to Know">Issuer Applications: What you Need to Know</a>
+                
+            </li>
+        
+            <li>
+                <a href="#displayer-applications-what-you-need-to-know" class="toc-h1 toc-link" data-title="Displayer Applications: What you Need to Know">Displayer Applications: What you Need to Know</a>
+                
+            </li>
+        
+    </ul>
+
+         
+        
+        
+    </div>
+    <div class="page-wrapper">
+        <div class="dark-box"></div>
+        <div class="content">
+            
+    
+        
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Badge Connect API, released as Open Badges 2.1 brings the concept of a Federated backpack to the Open Badges ecosystem. A backpack is a service that acts as an agent for a recipient of Open Badges.</p>
+
+<p>You can view code examples of each section of the guide.</p>
+
+<h1 id="application-types">Application Types</h1>
+
+<p>Applications in the Badge Connect-enabled Open Badges ecosystem fall into two main roles. <strong>Host</strong> (Backpack) and <strong>Relying Party</strong>. Relying Party applications typically serve functions as either an Issuer of badges, which provides recognition to recipients, or a Displayer of badges, which helps make badges meaningful or translate them back into some kind of real world value or new opportunity for their earners.</p>
+
+<h2 id="what-is-a-host-backpack">What is a Host (Backpack)?</h2>
+
+<p>A Host is the official role name in the Open Badges Specification, commonly called a Backpack, which stores badge award data on behalf of recipients, making it possible for those recipients to organize and manage the badges they have earned. Backpacks may allow sharing to social media sites as a means of transmitting information about the achievements that a learner has gained.</p>
+
+<h2 id="examples-of-issuer-role-applications">Examples of Issuer-role Applications</h2>
+
+<p>There are numerous reasons why an application would award badges. Badges can be used to recognize any achievement, large or small. Some example use cases include:</p>
+
+<ul>
+<li>Peer to Peer competency recognition</li>
+<li>Badgebot: award badges based on Twitter posts</li>
+<li>Stack Exchange proxy issuer: get all the achievements for a user on Stack Exchange and issue them as Open Badges and push to backpack.</li>
+<li>Conversational systems for recognition: Define a badge collectively, as in a wiki, and trigger awards to peers.</li>
+</ul>
+
+<h2 id="examples-of-displayer-role-applications">Examples of Displayer-role Applications</h2>
+
+<p>The first thing to understand about applications in the role of Displayer, is that Displayer is a clearly understood term for a vast category of applications that could make use of credentials earned by individuals, processing that credential data on behalf of badge recipients to provide them and others information about the meaning of these awards.</p>
+
+<p>Examples of simple Displayer applications include:</p>
+
+<ul>
+<li>A credential-based Apply to Job on Seek.com API connector or profile modifier</li>
+<li>LinkedIn Badge Connector: Convert from Open Badges to post to LinkedIn certifications, skills, profile</li>
+<li>Conversational systems post-recognition: Talk pages about badgeclasses related to awards in a user&rsquo;s backpack</li>
+</ul>
+
+<p>Farther-reaching Displayer applications include:</p>
+
+<ul>
+<li>A &ldquo;collective backpack&rdquo;: A community pushes all their badges from individual backpacks into one common backpack to represent the achievements of a group within a single space, as opposed to only achievements earned by one individual.</li>
+<li>Europass Wallet Pusher: translate your OB credentials into format for visualization in Europass wallet</li>
+</ul>
+
+<p>These examples were provided by the participants of a Badge Connect workshop at the <a href="https://epic.openrecognition.org">2019 ePIC Conference</a> in Lille, France and by contributors to this guide.</p>
+
+    
+        
+
+<h1 id="issuer-applications-what-you-need-to-know">Issuer Applications: What you Need to Know</h1>
+
+<p>Here is a guide for how to build a prototypical issuer application that awards Open Badges and pushes them to a recipient&rsquo;s backpack of choice.</p>
+
+    
+        
+
+<h1 id="displayer-applications-what-you-need-to-know">Displayer Applications: What you Need to Know</h1>
+
+<p>Here is a guide for how to build a prototypical displayer application that pulls badge awards from a recipient&rsquo;s backpack of choice and does something interesting with them. This example use case will be to display badges on a timeline to the user.</p>
+
+    
+
+        </div>
+        <div class="dark-box">
+            
+        </div>
+    </div>
+    
+</body>
+</html>
