@@ -11,7 +11,7 @@ Badge Connect API, released as Open Badges 2.1 brings the concept of a Federated
 
 You can view code examples of each section of the guide.
 
-This guide is sponsored by the [Badgr](https://badgr.com) Team at [Concentric Sky](https://concentricsky.com).
+This guide is sponsored by the [Badgr](https://badgr.com) Team at [Concentric Sky](https://concentricsky.com) and licensed openly under [Apache 2.0](https://github.com/concentricsky/badge-connect-guide/blob/master/LICENSE). Contributions welcome on [GitHub](https://github.com/concentricsky/badge-connect-guide).
 
 Editor: Nate Otto (Concentric Sky / Badgr - USA)
 
