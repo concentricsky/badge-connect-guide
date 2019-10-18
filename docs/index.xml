@@ -21,6 +21,16 @@ Application Types Applications in the Badge Connect-enabled Open Badges ecosyste
     </item>
     
     <item>
+      <title>Building Badge Connect Applications</title>
+      <link>https://concentricsky.github.io/badge-connect-guide/relying-party/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://concentricsky.github.io/badge-connect-guide/relying-party/</guid>
+      <description>Badge Connect Applications This section of the guide will explain how to get started with a relying party application for Badge Connect. Both Issuer apps and Displayer apps need to go through several common processes before the workflows for their specific needs diverge. Here we will explain these steps, including:
+ Backpack Selection Dynamic Client Registration The OAuth Dance: Authorization Code &amp;amp; Token Exchange Refreshing Tokens  Then the remaining sections of the guide will provide step-by-step instructions for accessing the API endpoints necessary to build Issuer and Displayer applications.</description>
+    </item>
+    
+    <item>
       <title>Building Issuer Applications</title>
       <link>https://concentricsky.github.io/badge-connect-guide/issuer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
