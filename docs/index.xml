@@ -10,14 +10,14 @@
     
     
     <item>
-      <title>Introduction</title>
+      <title>Badge Connect Guide</title>
       <link>https://concentricsky.github.io/badge-connect-guide/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://concentricsky.github.io/badge-connect-guide/main/</guid>
-      <description>Introduction Badge Connect API, released as Open Badges 2.1 brings the concept of a Federated backpack to the Open Badges ecosystem. A backpack is a service that acts as an agent for a recipient of Open Badges.
+      <description>Badge Connect Guide A developer resource for implementers of Open Badges 2.1 Badge Connect API, released as Open Badges 2.1 brings the concept of a Federated backpack to the Open Badges ecosystem. A backpack is a service that acts as an agent for a recipient of Open Badges.
 You can view code examples of each section of the guide.
-Application Types Applications in the Badge Connect-enabled Open Badges ecosystem fall into two main roles. Host (Backpack) and Relying Party. Relying Party applications typically serve functions as either an Issuer of badges, which provides recognition to recipients, or a Displayer of badges, which helps make badges meaningful or translate them back into some kind of real world value or new opportunity for their earners.</description>
+This guide is sponsored by the Badgr Team at Concentric Sky.</description>
     </item>
     
     <item>
@@ -36,7 +36,8 @@ Application Types Applications in the Badge Connect-enabled Open Badges ecosyste
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://concentricsky.github.io/badge-connect-guide/issuer/</guid>
-      <description>Issuer Applications: What you Need to Know Here is a guide for how to build a prototypical issuer application that awards Open Badges and pushes them to a recipient&amp;rsquo;s backpack of choice.</description>
+      <description>Issuer Applications: What you Need to Know Here is a guide for how to build a prototypical issuer application that awards Open Badges and pushes them to a recipient&amp;rsquo;s backpack of choice.
+Issuer Apps step by step  A user starts on an issuing application and earns a badge. For example, they successfully complete a quiz. An Open Badges Assertion is published, linked to a BadgeClass and Issuer Profile, according to the Open Badges 2.</description>
     </item>
     
     <item>
@@ -45,7 +46,8 @@ Application Types Applications in the Badge Connect-enabled Open Badges ecosyste
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://concentricsky.github.io/badge-connect-guide/displayer/</guid>
-      <description>Displayer Applications: What you Need to Know Here is a guide for how to build a prototypical displayer application that pulls badge awards from a recipient&amp;rsquo;s backpack of choice and does something interesting with them. This example use case will be to display badges on a timeline to the user.</description>
+      <description>Displayer Applications: What you Need to Know Here is a guide for how to build a prototypical displayer application that pulls badge awards from a recipient&amp;rsquo;s backpack of choice and does something interesting with them. This example use case will be to display badges on a timeline to the user.
+Displayer Apps step by step  A user starts on an badge displayer application and sees they have the opportunity to use the app by connecting their backpack.</description>
     </item>
     
   </channel>

@@ -46,7 +46,13 @@
         
         
             <li>
-                <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+                <a href="#badge-connect-guide" class="toc-h1 toc-link" data-title="Badge Connect Guide">Badge Connect Guide</a>
+                
+                    <ul class="toc-list-h2">
+                        
+                            <li><a href="#a-developer-resource-for-implementers-of-open-badges-2-1" class="toc-h2 toc-link" data-title="A developer resource for implementers of Open Badges 2.1">A developer resource for implementers of Open Badges 2.1</a></li>
+                        
+                    </ul>
                 
             </li>
         
@@ -73,10 +79,22 @@
             <li>
                 <a href="#issuer-applications-what-you-need-to-know" class="toc-h1 toc-link" data-title="Issuer Applications: What you Need to Know">Issuer Applications: What you Need to Know</a>
                 
+                    <ul class="toc-list-h2">
+                        
+                            <li><a href="#issuer-apps-step-by-step" class="toc-h2 toc-link" data-title="Issuer Apps step by step">Issuer Apps step by step</a></li>
+                        
+                    </ul>
+                
             </li>
         
             <li>
                 <a href="#displayer-applications-what-you-need-to-know" class="toc-h1 toc-link" data-title="Displayer Applications: What you Need to Know">Displayer Applications: What you Need to Know</a>
+                
+                    <ul class="toc-list-h2">
+                        
+                            <li><a href="#displayer-apps-step-by-step" class="toc-h2 toc-link" data-title="Displayer Apps step by step">Displayer Apps step by step</a></li>
+                        
+                    </ul>
                 
             </li>
         
@@ -93,11 +111,17 @@
     
         
 
-<h1 id="introduction">Introduction</h1>
+<h1 id="badge-connect-guide">Badge Connect Guide</h1>
+
+<h2 id="a-developer-resource-for-implementers-of-open-badges-2-1">A developer resource for implementers of Open Badges 2.1</h2>
 
 <p>Badge Connect API, released as Open Badges 2.1 brings the concept of a Federated backpack to the Open Badges ecosystem. A backpack is a service that acts as an agent for a recipient of Open Badges.</p>
 
 <p>You can view code examples of each section of the guide.</p>
+
+<p>This guide is sponsored by the <a href="https://badgr.com">Badgr</a> Team at <a href="https://concentricsky.com">Concentric Sky</a>.</p>
+
+<p>Editor: Nate Otto (Concentric Sky / Badgr - USA)</p>
 
 <h1 id="application-types">Application Types</h1>
 
@@ -113,7 +137,8 @@
 
 <ul>
 <li>Peer to Peer competency recognition</li>
-<li>Badgebot: award badges based on Twitter posts</li>
+<li><a href="https://badgebot.io">Badgebot</a>: award badges based on Twitter posts</li>
+<li>Instant quiz app like <a href="https://explore.badgr.io">Badgr Web Explorer</a></li>
 <li>Stack Exchange proxy issuer: get all the achievements for a user on Stack Exchange and issue them as Open Badges and push to backpack.</li>
 <li>Conversational systems for recognition: Define a badge collectively, as in a wiki, and trigger awards to peers.</li>
 </ul>
@@ -162,12 +187,48 @@
 
 <p>Here is a guide for how to build a prototypical issuer application that awards Open Badges and pushes them to a recipient&rsquo;s backpack of choice.</p>
 
+<h2 id="issuer-apps-step-by-step">Issuer Apps step by step</h2>
+
+<ul>
+<li>A user starts on an issuing application and earns a badge. For example, they successfully complete a quiz.</li>
+<li>An Open Badges Assertion is published, linked to a BadgeClass and Issuer Profile, according to the <a href="https://openbadgespec.org">Open Badges 2.0 Specification</a>.</li>
+<li>The user is offered the opportunity to claim the badge by accepting it into a backpack of their choice.</li>
+<li>A choice of backpacks is offered, including perhaps some suggestions known to the issuer application already as well as an advanced option to select a domain of their choice.</li>
+<li>If this is the first time the issuer application has encountered the backpack on the chosen domain, information about the backpack is read from the backpack&rsquo;s manifest file, and a server to server connection is established using Dynamic Client Registration</li>
+<li>The &ldquo;OAuth Dance&rdquo; is initiated, directing the user to the backpack for authorization.</li>
+<li>The user accepts the issuer app&rsquo;s requested permissions from within the backpack interface.</li>
+<li>The user is redirected back to the issuer application with a <code>code</code> in the query parameters portion of the URL.</li>
+<li>The issuer application exchanges the code for an access token (including a refresh token for later).</li>
+<li>The issuer application makes a request to the <code>GET /profile</code> endpoint to confirm that the awarded recipient identifier appears within the user&rsquo;s backpack profile.</li>
+<li>The issuer application makes a call to the <code>POST /assertions</code> endpoint to add the awarded badge to the user&rsquo;s backpack. The backpack responds with a successful result.</li>
+<li>The issuer application may now push badges to the user&rsquo;s backpack at any time.</li>
+<li>After some time, typically 1 hour, the access token expires. The next time the issuer app needs to contact the backpack on the behalf of this user, it will need to refresh its access token. At the time of its issue, the issuer application also obtained a refresh token. The refresh token is used to exchange the expired access token for a new one with an expiration date in the future.</li>
+</ul>
+
     
         
 
 <h1 id="displayer-applications-what-you-need-to-know">Displayer Applications: What you Need to Know</h1>
 
 <p>Here is a guide for how to build a prototypical displayer application that pulls badge awards from a recipient&rsquo;s backpack of choice and does something interesting with them. This example use case will be to display badges on a timeline to the user.</p>
+
+<h2 id="displayer-apps-step-by-step">Displayer Apps step by step</h2>
+
+<ul>
+<li>A user starts on an badge displayer application and sees they have the opportunity to use the app by connecting their backpack.</li>
+<li>A choice of backpacks is offered, including perhaps some suggestions known to the displayer application already as well as an advanced option to select a domain of their choice.</li>
+<li>If this is the first time the displayer application has encountered the backpack on the chosen domain, information about the backpack is read from the backpack&rsquo;s manifest file, and a server to server connection is established using Dynamic Client Registration</li>
+<li>The &ldquo;OAuth Dance&rdquo; is initiated, directing the user to the backpack for authorization.</li>
+<li>The user accepts the displayer app&rsquo;s requested permission scopes from within the backpack interface.</li>
+<li>The user is redirected back to the displayer application with a <code>code</code> in the query parameters portion of the URL.</li>
+<li>The displayer application exchanges the code for an access token (including a refresh token for later).</li>
+<li>The displayer application makes a request to the <code>GET /profile</code> endpoint to see the identifiers registered on the user&rsquo;s profile.</li>
+<li>The displayer application makes a call to the <code>GET /assertions</code> endpoint to read the badges in a user&rsquo;s backpack. The backpack responds with a successful result.</li>
+<li>The displayer application processes the badges. This may include submitting each badge to the validator for re-verification. As needed, the assertions are mapped to the recipient identifiers found in the profile.</li>
+<li>Badges are displayed to the user and/or become part of the user&rsquo;s experience on the displayer app.</li>
+<li>The displayer application may now pull updated badges to the user&rsquo;s backpack at any time.</li>
+<li>After some time, typically 1 hour, the access token expires. The next time the displayer app needs to contact the backpack on the behalf of this user, it will need to refresh its access token. At the time of its issue, the displayer application also obtained a refresh token. The refresh token is used to exchange the expired access token for a new one with an expiration date in the future.</li>
+</ul>
 
     
 

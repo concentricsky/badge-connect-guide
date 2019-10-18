@@ -1,14 +1,19 @@
 ---
 weight: 10
-title: Introduction
+title: Badge Connect Guide
 ---
 
-# Introduction
+# Badge Connect Guide
+
+## A developer resource for implementers of Open Badges 2.1
 
 Badge Connect API, released as Open Badges 2.1 brings the concept of a Federated backpack to the Open Badges ecosystem. A backpack is a service that acts as an agent for a recipient of Open Badges.
 
 You can view code examples of each section of the guide.
 
+This guide is sponsored by the [Badgr](https://badgr.com) Team at [Concentric Sky](https://concentricsky.com).
+
+Editor: Nate Otto (Concentric Sky / Badgr - USA)
 
 # Application Types
 
@@ -23,7 +28,8 @@ A Host is the official role name in the Open Badges Specification, commonly call
 There are numerous reasons why an application would award badges. Badges can be used to recognize any achievement, large or small. Some example use cases include:
 
 * Peer to Peer competency recognition
-* Badgebot: award badges based on Twitter posts
+* [Badgebot](https://badgebot.io): award badges based on Twitter posts
+* Instant quiz app like [Badgr Web Explorer](https://explore.badgr.io)
 * Stack Exchange proxy issuer: get all the achievements for a user on Stack Exchange and issue them as Open Badges and push to backpack.
 * Conversational systems for recognition: Define a badge collectively, as in a wiki, and trigger awards to peers.
 
