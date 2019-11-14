@@ -7,9 +7,9 @@ title: Badge Connect Guide
 
 ## A developer resource for implementers of Open Badges 2.1
 
-Badge Connect API, released as Open Badges 2.1 brings the concept of a Federated backpack to the Open Badges ecosystem. A backpack is a service that acts as an agent for a recipient of Open Badges. The full Badge Connect specification is available published by IMS in latest editor's draft state [here](https://raw.githack.com/IMSGlobal/openbadges-specification/develop/ob_v2p1/ob-spec-v2p1.html).
+Badge Connect API, released as Open Badges 2.1 brings the concept of a Federated backpack to the Open Badges ecosystem. A backpack is a service that acts as an agent for a recipient of Open Badges. The full Badge Connect specification is available published by IMS in latest editor's draft state [here](https://raw.githack.com/IMSGlobal/openbadges-specification/develop/ob_v2p1/ob-spec-v2p1.html). Badge Connect was developed in 2018-19 by members of the IMS Global Open Badges Workgroup, based on years of thinking and advocacy for an open ecosystem by members of the [Open Badges](https://openbadges.org/about/#top) project founded by Mozilla.
 
-You can view code examples of each section of the guide.
+You can view code examples of each section of the guide. (In Progress)
 
 This guide is sponsored by the [Badgr](https://badgr.com) Team at [Concentric Sky](https://concentricsky.com) and licensed openly under [Apache 2.0](https://github.com/concentricsky/badge-connect-guide/blob/master/LICENSE). Contributions welcome on [GitHub](https://github.com/concentricsky/badge-connect-guide).
 
