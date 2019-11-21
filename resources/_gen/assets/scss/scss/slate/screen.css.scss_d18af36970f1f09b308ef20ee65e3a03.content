@@ -356,6 +356,10 @@ td,
 th {
   padding: 0; }
 
+.toc-wrapper img.logo {
+  margin: 2em auto;
+  max-width: 80%; }
+
 .content > div.highlight {
   clear: none; }
 
