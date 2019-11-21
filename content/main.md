@@ -1,9 +1,9 @@
 ---
 weight: 10
-title: Badge Connect Guide
+title: Unofficial Badge Connect Guide
 ---
 
-# Badge Connect Guide
+# Unofficial Badge Connect Guide
 
 ## A developer resource for implementers of Open Badges 2.1
 
