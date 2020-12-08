@@ -1,4 +1,4 @@
-# Badge Connect Guide: The Unofficial Implmenter's Handbook to Open Badges 2.1
+# Badge Connect Guide: The Unofficial Implementer's Handbook to Open Badges 2.1
 
 Editor: Nate Otto (Concentric Sky / Badgr - USA)
 Contributors:
